@@ -27,9 +27,8 @@ tt_content.menu_subpages_images {
 	}
 
 	settings {
-		maxWidth  = 495c
-		maxHeight = 305c
-		menuIconSitemapImageStyle = width:300px; height:auto; max-height:250px;
+		maxWidth  = 640c
+		maxHeight = 480c
 	}
 }
 
@@ -59,5 +58,9 @@ tt_content.menu_pages_images {
 		editIcons {
 			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
 		}
+	}
+	settings {
+		maxWidth  = 640c
+		maxHeight = 480c
 	}
 }
