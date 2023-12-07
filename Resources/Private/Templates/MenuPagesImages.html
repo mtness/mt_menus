@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="Main">
+	<f:render section="Menu" arguments="{menu: menu}" />
+</f:section>
+
+<f:section name="Menu">
+	<f:if condition="{menu}">
+		<ul class="ce-MenuPagesImages">
+			<f:for each="{menu}" as="page">
+				<li><f:spaceless>
+					<f:link.page pageUid="{page.data.uid}">
+
+						<f:if condition="{page.files}">
+
+							<div class="item">
+								<f:image image="{page.files.0.originalFile}" width="495c" height="305c" />
+							</div>
+
+						</f:if>
+
+						<h3>
+						 <f:if condition="<f:format.stripTags>{page.nav_title}</f:format.stripTags>">
+							<f:then>
+								<f:format.stripTags>{page.data.nav_title}</f:format.stripTags>
+							</f:then>
+							<f:else>
+								<f:format.raw> {page.data.title} </f:format.raw>
+							</f:else>
+						 </f:if>
+						</h3>
+
+						<f:if condition="{page.data.subtitle}">
+							<p class="ce-menu-subtitle"><strong><f:format.raw>{page.data.subtitle}</f:format.raw></strong></p>
+						</f:if>
+
+						<f:if condition="{page.data.abstract}">
+							<p class="ce-menu-abstract"><f:format.raw>{page.data.abstract}</f:format.raw></p>
+						</f:if>
+					</f:link.page>
+
+					<f:render section="Menu" arguments="{menu: page.children}" />
+					</f:spaceless>
+				</li>
+			</f:for>
+		</ul>
+	</f:if>
+
+</f:section>
+
+</html>

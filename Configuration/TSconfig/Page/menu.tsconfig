@@ -1,0 +1,22 @@
+mod.wizards.newContentElement.wizardItems.menu {
+	# header = Menu
+	elements {
+		menu_subpages_images {
+			iconIdentifier = menu_subpages_images
+			title = Submenu mit Bild-Resource
+			description = Submenu mit Bild-Resource
+			tt_content_defValues {
+				CType = menu_subpages_images
+			}
+		}
+		menu_pages_images {
+			iconIdentifier = menu_pages_images
+			title = Menu mit Bild-Resource
+			description = menu mit Bild-Resource
+			tt_content_defValues {
+				CType = menu_pages_images
+			}
+		}
+	}
+	show := addToList( menu_subpages_images, menu_pages_images )
+}

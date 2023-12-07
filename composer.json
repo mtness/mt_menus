@@ -1,0 +1,27 @@
+{
+	"name": "markustimtner/mt-menus",
+	"type": "typo3-cms-extension",
+	"description": "Versatile extension",
+	"authors": [
+		{
+			"name": "Markus Timtner",
+			"role": "Machine Whisperer"
+		}
+	],
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"require": {
+		"typo3/cms-backend": "^10 || ^11 ||^12"
+	},
+	"autoload": {
+		"psr-4": {
+			"MarkusTimtner\\MtMenus\\": "Classes"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "mt_menus"
+		}
+	}
+}

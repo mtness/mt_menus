@@ -1,0 +1,63 @@
+# Menu of subpages of selected pages including resources and abstracts:
+#
+# CType: menu_subpages_images
+tt_content.menu_subpages_images =< lib.contentElement
+tt_content.menu_subpages_images {
+	templateName = MenuSubpagesImages
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+		10 {
+			special = directory
+			special.value.field = pages
+			levels = 1
+			dataProcessing {
+				10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+				10 {
+					references.fieldName = media
+				}
+			}
+		}
+	}
+
+	stdWrap {
+		editIcons = tt_content: header [header_layout], pages
+		editIcons {
+			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
+		}
+	}
+
+	settings {
+		maxWidth  = 495c
+		maxHeight = 305c
+		menuIconSitemapImageStyle = width:300px; height:auto; max-height:250px;
+	}
+}
+
+# Menu of selected pages:
+# ...
+#
+# CType: menu_pages_images
+
+tt_content.menu_pages_images =< lib.contentElement
+tt_content.menu_pages_images {
+	templateName = MenuPagesImages
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+		10 {
+			special = list
+			special.value.field = pages
+			dataProcessing {
+				10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+				10 {
+					references.fieldName = media
+				}
+			}
+		}
+	}
+	stdWrap {
+		editIcons = tt_content: header [header_layout], pages
+		editIcons {
+			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
+		}
+	}
+}
