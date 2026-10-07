@@ -17,13 +17,13 @@ $EM_CONF[$_EXTKEY] = [
   'author' => 'Markus Timtner',
   'author_email' => 'me@mtness.net',
   'author_company' => '',
-  'version' => '1.0.1',
+  'version' => '14.0.0',
   'state' => 'stable',
   'uploadfolder' => false,
   'createDirs' => '',
   'constraints' => [
     'depends' => [
-      'typo3' => '10.0.0-13.9.99',
+      'typo3' => '13.0.0-14.9.99',
 	],
     'conflicts' => [],
     'suggests' => [],

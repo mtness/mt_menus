@@ -4,6 +4,9 @@
 tt_content.menu_subpages_images =< lib.contentElement
 tt_content.menu_subpages_images {
 	templateName = MenuSubpagesImages
+	templateRootPaths {
+		20 = EXT:mt_menus/Resources/Private/Templates/
+	}
 	dataProcessing {
 		10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
 		10 {
@@ -16,13 +19,6 @@ tt_content.menu_subpages_images {
 					references.fieldName = media
 				}
 			}
-		}
-	}
-
-	stdWrap {
-		editIcons = tt_content: header [header_layout], pages
-		editIcons {
-			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
 		}
 	}
 
@@ -40,6 +36,9 @@ tt_content.menu_subpages_images {
 tt_content.menu_pages_images =< lib.contentElement
 tt_content.menu_pages_images {
 	templateName = MenuPagesImages
+	templateRootPaths {
+		20 = EXT:mt_menus/Resources/Private/Templates/
+	}
 	dataProcessing {
 		10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
 		10 {
@@ -51,12 +50,6 @@ tt_content.menu_pages_images {
 					references.fieldName = media
 				}
 			}
-		}
-	}
-	stdWrap {
-		editIcons = tt_content: header [header_layout], pages
-		editIcons {
-			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
 		}
 	}
 	settings {
