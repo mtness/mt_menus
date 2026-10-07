@@ -1,10 +1,19 @@
 {
 	"name": "markustimtner/mt-menus",
 	"type": "typo3-cms-extension",
-	"description": "Versatile extension",
+	"description": "Menu content elements for pages and subpages with images from the page resources.",
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"menu",
+		"content element",
+		"images"
+	],
+	"homepage": "https://github.com/mtness/mt_menus",
 	"authors": [
 		{
 			"name": "Markus Timtner",
+			"email": "me@mtness.net",
 			"role": "Machine Whisperer"
 		}
 	],
@@ -12,12 +21,9 @@
 		"GPL-2.0-or-later"
 	],
 	"require": {
-		"typo3/cms-backend": "^13 || ^14"
-	},
-	"autoload": {
-		"psr-4": {
-			"MarkusTimtner\\MtMenus\\": "Classes"
-		}
+		"php": "^8.2",
+		"typo3/cms-core": "^13.4 || ^14.0",
+		"typo3/cms-frontend": "^13.4 || ^14.0"
 	},
 	"extra": {
 		"typo3/cms": {

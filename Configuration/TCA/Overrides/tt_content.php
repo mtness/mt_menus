@@ -4,7 +4,24 @@ defined('TYPO3') || die('Access denied.');
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-// Add the CType "Menu of Subpages with Images"
+$showItem = '
+	--div--;core.form.tabs:general,
+		--palette--;;headers,
+		pages;LLL:EXT:mt_menus/Resources/Private/Language/locallang.xlf:pages,
+	--div--;core.form.tabs:appearance,
+		--palette--;;frames,
+		--palette--;;appearanceLinks,
+	--div--;core.form.tabs:language,
+		--palette--;;language,
+	--div--;core.form.tabs:access,
+		--palette--;;hidden,
+		--palette--;;access,
+	--div--;core.form.tabs:notes,
+		rowDescription,
+	--div--;core.form.tabs:extended,
+';
+
+// CType "Menu of Subpages with Images"
 ExtensionManagementUtility::addTcaSelectItem(
 	'tt_content',
 	'CType',
@@ -17,17 +34,11 @@ ExtensionManagementUtility::addTcaSelectItem(
 	'menu_subpages',
 	'after'
 );
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['menu_subpages_images'] = 'menu_subpages_images';
-
-// Configure the default backend fields for the content element
 $GLOBALS['TCA']['tt_content']['types']['menu_subpages_images'] = [
-	'showitem' => '
-		--palette--;;headers,
-		pages;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:pages.ALT.menu_formlabel,
-	',
+	'showitem' => $showItem,
 ];
 
-// Add the CType "Menu of Pages with Images"
+// CType "Menu of Pages with Images"
 ExtensionManagementUtility::addTcaSelectItem(
 	'tt_content',
 	'CType',
@@ -40,12 +51,6 @@ ExtensionManagementUtility::addTcaSelectItem(
 	'menu_pages',
 	'after'
 );
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['menu_pages_images'] = 'menu_pages_images';
-
-// Configure the default backend fields for the content element
 $GLOBALS['TCA']['tt_content']['types']['menu_pages_images'] = [
-	'showitem' => '
-		--palette--;;headers,
-		pages;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:pages.ALT.menu_formlabel,
-	',
+	'showitem' => $showItem,
 ];

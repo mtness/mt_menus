@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides
+	xmlns="https://www.phpdoc.org/guides"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://www.phpdoc.org/guides vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
+	links-are-relative="true"
+>
+	<extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+		project-home="https://github.com/mtness/mt_menus"
+		project-contact="mailto:me@mtness.net"
+		project-repository="https://github.com/mtness/mt_menus"
+		project-issues="https://github.com/mtness/mt_menus/issues"
+	/>
+	<project title="MT Menus" release="14.0.0" version="14.0" copyright="since 2016 by Markus Timtner"/>
+</guides>

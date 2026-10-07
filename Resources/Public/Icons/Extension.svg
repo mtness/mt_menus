@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .a{fill:#5f7a93}.t{fill:#a3b0bd}
+    @media(prefers-color-scheme:dark){.a{fill:#8ea6bd}.t{fill:#667585}}
+  </style>
+  <rect class="a" x="4" y="4" width="16" height="16" rx="5"/>
+  <rect class="a" x="24" y="4" width="16" height="16" rx="5"/>
+  <rect class="a" x="44" y="4" width="16" height="16" rx="5"/>
+  <rect class="t" x="4" y="24" width="16" height="16" rx="5"/>
+  <rect class="t" x="24" y="24" width="16" height="16" rx="5"/>
+  <rect class="t" x="44" y="24" width="16" height="16" rx="5"/>
+  <rect class="t" x="4" y="44" width="16" height="16" rx="5"/>
+  <rect class="t" x="24" y="44" width="16" height="16" rx="5"/>
+  <rect class="t" x="44" y="44" width="16" height="16" rx="5"/>
+</svg>

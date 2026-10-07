@@ -1,0 +1,4 @@
+name: markustimtner/mt-menus
+label: MT Menus
+dependencies:
+  - typo3/fluid-styled-content

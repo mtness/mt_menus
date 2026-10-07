@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-10-07T00:00:00Z" product-name="mt_menus">
+		<header/>
+		<body>
+			<trans-unit id="menu" approved="yes">
+				<source>Menu with Image from Resources</source>
+				<target>Menü mit Bild aus den Medien</target>
+			</trans-unit>
+			<trans-unit id="submenu" approved="yes">
+				<source>Submenu with Image from Resources</source>
+				<target>Untermenü mit Bild aus den Medien</target>
+			</trans-unit>
+			<trans-unit id="pages" approved="yes">
+				<source>Pages</source>
+				<target>Seiten</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

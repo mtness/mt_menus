@@ -1,0 +1,8 @@
+/.agents/ export-ignore
+/.github/ export-ignore
+/.idea/ export-ignore
+/.typo3-dev-companion/ export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.mcp.json export-ignore
+/opencode.json export-ignore

@@ -7,6 +7,9 @@ tt_content.menu_subpages_images {
 	templateRootPaths {
 		20 = EXT:mt_menus/Resources/Private/Templates/
 	}
+	partialRootPaths {
+		20 = EXT:mt_menus/Resources/Private/Partials/
+	}
 	dataProcessing {
 		10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
 		10 {
@@ -16,28 +19,32 @@ tt_content.menu_subpages_images {
 			dataProcessing {
 				10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
 				10 {
-					references.fieldName = media
+					references {
+						table = pages
+						fieldName = media
+					}
 				}
 			}
 		}
 	}
 
 	settings {
-		maxWidth  = 640c
-		maxHeight = 480c
+		maxWidth = 495c
+		maxHeight = 305c
 	}
 }
 
 # Menu of selected pages:
-# ...
 #
 # CType: menu_pages_images
-
 tt_content.menu_pages_images =< lib.contentElement
 tt_content.menu_pages_images {
 	templateName = MenuPagesImages
 	templateRootPaths {
 		20 = EXT:mt_menus/Resources/Private/Templates/
+	}
+	partialRootPaths {
+		20 = EXT:mt_menus/Resources/Private/Partials/
 	}
 	dataProcessing {
 		10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
@@ -47,13 +54,17 @@ tt_content.menu_pages_images {
 			dataProcessing {
 				10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
 				10 {
-					references.fieldName = media
+					references {
+						table = pages
+						fieldName = media
+					}
 				}
 			}
 		}
 	}
+
 	settings {
-		maxWidth  = 640c
-		maxHeight = 480c
+		maxWidth = 495c
+		maxHeight = 305c
 	}
 }

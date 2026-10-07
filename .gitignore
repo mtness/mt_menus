@@ -1,3 +1,9 @@
 # Ignore release files
 /*.zip
 /.idea/
+/.Build/
+/vendor/
+/composer.lock
+/.php-cs-fixer.cache
+/.mcp.json
+/opencode.json
